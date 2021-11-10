@@ -1,10 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import Slider from '../Header/Slider/Slider';
 import Products from '../Products.js/Products';
-import './home.css';
+import './allproduct.css'
 
-const Home = () => {
-
+const AllProduct = () => {
     const [products, setProducts]=useState([])
     // data fetch 
     useEffect(()=>{
@@ -15,9 +13,8 @@ const Home = () => {
     },[])
 
     return (
-        <div>
-            <Slider/>
-            <div className='mt-5 card-design1'>
+        <div className='package-page'>
+           <div className='mt-5 card-design1'>
             <div><h2>Our Products</h2></div>
             <div className="row row-cols-1 row-cols-md-3 g-4 pb-3 mt-3">
             
@@ -26,11 +23,9 @@ const Home = () => {
             }
         </div>
         </div>
-    
+            
         </div>
-
-    
     );
 };
 
-export default Home;
+export default AllProduct;

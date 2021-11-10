@@ -1,0 +1,35 @@
+.order-list{
+    background-color: rgb(219, 241, 189);
+    padding: 5px;
+    width: 100%;
+    justify-content: center;
+    border-radius: 15px;
+    
+}
+.order-list p{
+    margin-left: 10px;
+}
+.page-size-bg{
+    margin-top: 100px;
+    /* margin-bottom: 700px; */
+    height: 100vh;
+    text-align: center;
+    margin-right: 150px;
+    margin-left: 150px;
+
+}
+.icon-delete{
+    color: red;
+    cursor: pointer;
+    
+}
+@media only screen and (max-width: 640px){
+    .page-size-bg{
+        margin: 0%;
+        margin-top: 80px;
+        height: 100vh;
+        text-align: center;
+     
+    
+    }
+}

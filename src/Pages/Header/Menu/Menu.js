@@ -26,10 +26,12 @@ const Menu = () => {
   <Navbar.Collapse id="responsive-navbar-nav">
     <Nav className="me-auto">
       <Nav.Link as={Link} to="/home">Home</Nav.Link>
-      <Nav.Link as={Link} to="/packages">Packages</Nav.Link>
-      {user?.email?<Nav.Link as={Link} to="/orders">My Booking</Nav.Link>: ('')}
-      {user?.email?<Nav.Link as={Link} to="/ordersmanage">Manage All Bookings</Nav.Link>: ('')}
-      {user?.email?<Nav.Link as={Link} to="/addpackages">Add Packages</Nav.Link>: ('')}
+      <Nav.Link as={Link} to="/products">Products</Nav.Link>
+      {user?.email?<Nav.Link as={Link} to="/myorders">My Orders</Nav.Link>: ('')}
+      {user?.email?<Nav.Link as={Link} to="/review">Review</Nav.Link>: ('')}
+      {user?.email?<Nav.Link as={Link} to="/payment">Payment</Nav.Link>: ('')}
+      {/* {user?.email?<Nav.Link as={Link} to="/ordersmanage">Manage All Orders</Nav.Link>: ('')}
+      {user?.email?<Nav.Link as={Link} to="/addproduct">Add Product</Nav.Link>: ('')} */}
       <Nav.Link as={Link} to="/contact">Contact Us</Nav.Link>
       
     </Nav>

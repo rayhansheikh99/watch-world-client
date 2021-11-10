@@ -1,0 +1,17 @@
+.review-page{
+    margin-top: 100px;
+}
+.package-form{
+    margin-left: 38%;
+    margin-top: 20px;
+ }
+ @media only screen and (max-width: 640px){
+     .package-form{
+         margin-top: 20px;
+         margin-left: 0;
+     }
+     .package-details h4{
+         margin-top: 80px;
+         text-align: left;
+     }
+ }

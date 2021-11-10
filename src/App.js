@@ -13,6 +13,10 @@ import SignUp from './Pages/Header/SignUp/SignUp';
 import AuthProvider from './Contexts/AuthProvider';
 import About from './Pages/About/About';
 import Contact from './Pages/Contact/Contact';
+import AllProduct from './Pages/AllProduct/AllProduct';
+import Shipping from './Pages/Shipping/Shipping';
+import MyOrders from './Pages/MyOrders/MyOrders';
+import Review from './Pages/Review/Review';
 // import PrivateRoute from './Pages/Header/Login/PrivateRoute/PrivateRoute';
 
 
@@ -29,11 +33,23 @@ function App() {
          <Route path='/home'>
             <Home/>
          </Route>
+         <Route path='/products'>
+            <AllProduct/>
+         </Route>
+         <Route path='/myorders'>
+            <MyOrders/>
+         </Route>
+         <Route path='/review'>
+            <Review/>
+         </Route>
          <Route path='/login'>
             <Login/>
          </Route>
          <Route path='/signup'>
             <SignUp/>
+         </Route>
+         <Route path='/shipping'>
+            <Shipping/>
          </Route>
          <Route path='/about'>
             <About/>
