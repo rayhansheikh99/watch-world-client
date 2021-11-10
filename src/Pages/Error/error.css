@@ -1,0 +1,8 @@
+.error-container{
+    margin-top: 50px;
+}
+.btn-error{
+    position: absolute;
+    right: 48%;
+    top: 90%;
+}

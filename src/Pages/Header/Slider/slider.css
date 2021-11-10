@@ -1,0 +1,10 @@
+.size-slider{
+    height: 550px;
+}
+
+@media only screen and (max-width: 640px){
+    .size-slider{
+        height: 300px;
+        width: 100%;
+    }
+}

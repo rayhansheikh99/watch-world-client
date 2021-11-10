@@ -1,0 +1,58 @@
+.page-size{
+    background-image: linear-gradient(rgba(138, 210, 219, 0.856), rgb(240, 240, 171));
+    height: 100vh;
+    padding: 30px;
+    border-radius: 20px;
+    width: 100%;
+    padding: 10% 30% 20%;
+
+}
+.body-login{
+    background-color: gray;
+}
+.login-form{
+    background-color: rgb(220, 228, 220);
+    padding: 10% 15%;
+}
+.login-form p{
+    margin: 0px;
+}
+.btn-desing-all{
+    background-image: linear-gradient(to right, rgb(181, 67, 216), rgba(153, 209, 241, 0.774));
+    border: none;
+    border-radius: 20px;
+}
+.icon-google{
+    font-size: 4em;
+    background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 68% 40%/150% 150% no-repeat;
+    display:inline;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 900;
+    padding: 0px;
+    margin-top: 0;
+    cursor: pointer;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+
+.btn-desing-all:hover{
+    background-image: linear-gradient(to right, rgb(132, 58, 155), rgba(67, 137, 179, 0.774));
+}
+    @media only screen and (max-width: 640px){
+    .page-size{
+        padding-top: 20%;
+    }
+    .login-form{
+        background-color: transparent;
+        padding:0;
+        margin: 0;
+        
+        
+    }
+    .input-size{
+        
+    }
+   
+}

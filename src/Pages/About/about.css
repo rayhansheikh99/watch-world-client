@@ -1,0 +1,12 @@
+.about-page{
+    margin: 10%;
+}
+.about-page p{
+    text-align: justify;
+}
+
+@media only screen and (max-width:640px){
+    .about-page{
+        margin-top: 20%;
+    }
+}
