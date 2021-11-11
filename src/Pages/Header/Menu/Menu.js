@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import useAuth from '../../../Hooks/useAuth';
-import logo from '../../../images/logo/watch-logo.PNG'
+import logo from '../../../images/logo/watch-logo.png'
 import './menu.css'
 
 const Menu = () => {
@@ -16,12 +16,12 @@ const Menu = () => {
         <img
           alt=""
           src={logo}
-          width="250"
+          width="100"
           height="50"
           className="d-inline-block align-top"
         />
   </Navbar.Brand>
- 
+  <Navbar.Brand className='text-danger' as={Link} to="/home">WATCH WORLD</Navbar.Brand>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">
     <Nav className="me-auto">

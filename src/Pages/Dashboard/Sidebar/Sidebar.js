@@ -7,9 +7,11 @@ import {
   CDBSidebarMenu,
   CDBSidebarMenuItem,
 } from 'cdbreact';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
+import useAuth from '../../../Hooks/useAuth';
  
 const Sidebar = () => {
+    const {user, logOut} = useAuth();
   return (
     <div
       style={{ display: 'flex', height: '100vh', overflow: 'scroll initial' }}
@@ -21,7 +23,7 @@ const Sidebar = () => {
             className="text-decoration-none"
             style={{ color: 'inherit' }}
           >
-           Watch World
+           WATCH WORLD
           </a>
         </CDBSidebarHeader>
  
@@ -43,10 +45,7 @@ const Sidebar = () => {
             </NavLink>
  
             <NavLink
-              exact
-              to="/hero404"
-              target="_blank"
-              activeClassName="activeClicked"
+              onClick={logOut} as={Link} to="/login"
             >
               <CDBSidebarMenuItem icon="sign-out-alt">
                 Log Out

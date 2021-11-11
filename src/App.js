@@ -20,6 +20,9 @@ import Review from './Pages/Review/Review';
 import Payment from './Pages/MyOrders/Payment/Payment';
 import PrivateRoute from './Pages/Header/Login/PrivateRoute/PrivateRoute';
 import Dashboard from './Pages/Dashboard/Dashboard';
+import AddProduct from './Pages/AddProduct/AddProduct';
+import MakeAdmin from './Pages/MakeAdmin/MakeAdmin';
+import ManageOrders from './Pages/ManageOrders/ManageOrders';
 
 
 function App() {
@@ -49,6 +52,15 @@ function App() {
          </Route>
          <Route path='/dashboard'>
             <Dashboard/>
+         </Route>
+         <Route path='/addproduct'>
+            <AddProduct/>
+         </Route>
+         <Route path='/makeadmin'>
+            <MakeAdmin/>
+         </Route>
+         <Route path='/manageorders'>
+            <ManageOrders/>
          </Route>
          <Route path='/login'>
             <Login/>

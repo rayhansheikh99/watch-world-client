@@ -1,0 +1,8 @@
+.order-list-all{
+    margin: auto;
+    background-color: rgb(219, 241, 189);
+    padding: 5px;
+    width: 80%;
+    justify-content: center;
+    border-radius: 15px;
+}

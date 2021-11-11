@@ -1,3 +1,5 @@
+import { faCartPlus } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import { Button, Card, ListGroup, ListGroupItem } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
@@ -19,7 +21,8 @@ const Products = (props) => {
                         <ListGroupItem>{describe}</ListGroupItem>
                     </ListGroup>
                     <Card.Body>
-                  <Link to={'/Shipping'}><Button className='px-5 btn-design'>Buy Now</Button></Link>
+                    
+                  <Link to={'/Shipping'}><Button className='px-5 btn-design'><FontAwesomeIcon className='me-2' icon={faCartPlus} />Buy Now</Button></Link>
                     
                     </Card.Body>
                 </Card>
