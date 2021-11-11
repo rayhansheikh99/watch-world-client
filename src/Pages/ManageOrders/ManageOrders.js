@@ -11,7 +11,7 @@ const ManageOrders = () => {
     const [orders, setOrders]=useState([])
     // data fetch 
     useEffect(()=>{
-        fetch('http://localhost:5000/orders')
+        fetch('http://localhost:5000/allorder')
         .then(res=>res.json())
         .then(data=> setOrders(data))
 
@@ -55,7 +55,7 @@ const ManageOrders = () => {
                     //showing data here
                     orders.map(order => <li
                         key={order._id}
-                        >Product Name: {order.packageName} E-mail: {order.email} Phone: {order.phone}
+                        >Product Name: {order.ProductName} E-mail: {order.email} Phone: {order.phone}
                         <span className='icon-delete'>
                         <FontAwesomeIcon onClick={()=>handleDeleteOrder(order._id)} className='ms-3 mt-1' icon={faTrash} />
                         </span>
