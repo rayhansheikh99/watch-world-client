@@ -32,17 +32,19 @@ const Menu = () => {
       {user?.email?<Nav.Link as={Link} to="/payment" className='menu-text'>Payment</Nav.Link>: ('')}
       {/* {user?.email?<Nav.Link as={Link} to="/ordersmanage" className='menu-text'>Manage All Orders</Nav.Link>: ('')}
       {user?.email?<Nav.Link as={Link} to="/addproduct" className='menu-text'>Add Product</Nav.Link>: ('')} */}
-      <Nav.Link as={Link} to="/contact" className='menu-text'>Contact Us</Nav.Link>
+      {/* <Nav.Link as={Link} to="/dashboard" className='menu-text'>Dashboard</Nav.Link> */}
       
     </Nav>
     <Nav>
+    {user?.email?<Nav.Link as={Link} to="/dashboard" className='menu-text'>Dashboard</Nav.Link>: ('')}
       {user?.email?
        <Nav.Link onClick={logOut} as={Link} to="/login" className='me-5 menu-text'>Logout</Nav.Link>:
       <Nav.Link as={Link} to="/login" className='menu-text'>Login</Nav.Link>}
     </Nav>
+    {user?.email?
       <Navbar.Text className='menu-text'>
-        Signed in as: {user?.displayName}
-      </Navbar.Text>
+        Welcome: {user?.displayName}
+      </Navbar.Text>: ('')}
     
   </Navbar.Collapse>
   </Container>

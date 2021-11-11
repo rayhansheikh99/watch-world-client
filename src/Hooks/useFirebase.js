@@ -1,10 +1,12 @@
 import { getAuth, updateProfile, signInWithPopup, GoogleAuthProvider, signInWithEmailAndPassword, createUserWithEmailAndPassword, onAuthStateChanged, signOut} from "firebase/auth";
 import { useEffect, useState } from "react";
+import { useHistory } from "react-router";
 import initializeAuthentication from "../Pages/Header/Firebase/firebase.init";
 
 initializeAuthentication();
 // hooks here all 
 const useFirebase = ()=>{
+    const history = useHistory();
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
@@ -52,10 +54,12 @@ const useFirebase = ()=>{
         .then(result=>{
             const user = result.user;
             console.log(user)
+            history.push('/')
             setError('')
             window.location.reload()
             setUserName();
         })
+      
         .catch((error) => setError(error.message));
     }
 
@@ -72,6 +76,9 @@ const useFirebase = ()=>{
             const user = result.user;
             console.log(user)
           })
+          .then(result =>{
+            history.push('/')
+        })
           .catch((error) => {
             setError(error.code);
             setError(error.message);
@@ -110,7 +117,8 @@ const useFirebase = ()=>{
         handleRegistration,
         error,
         handleSignIn,
-        handleNameChange
+        handleNameChange,
+        signInWithEmailAndPassword
 
 
         

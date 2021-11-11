@@ -14,7 +14,7 @@ const AllReview = () => {
     },[])
     return (
         <div  className='mt-5 card-design1'>
-            <h2>Customer Review</h2>
+            <h4>CUSTOMER REVIEW</h4>
             <div className="row row-cols-1 row-cols-md-3 g-4 pb-3 mt-3">
             {
                 reviews.map(review => <Reviews key={review._id} review={review}/>)

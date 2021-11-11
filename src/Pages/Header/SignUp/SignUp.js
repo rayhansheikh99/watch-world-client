@@ -5,7 +5,7 @@ import useFirebase from '../../../Hooks/useFirebase';
 import './signup.css'
 
 const SignUp = () => {
-
+  
   //sign up system apply here
   const {loginWithGoogle, handleNameChange, handleRegistration, handleEmailChange, handlePasswordChange, error} = useFirebase();
 

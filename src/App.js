@@ -18,7 +18,7 @@ import Shipping from './Pages/Shipping/Shipping';
 import MyOrders from './Pages/MyOrders/MyOrders';
 import Review from './Pages/Review/Review';
 import Payment from './Pages/MyOrders/Payment/Payment';
-// import PrivateRoute from './Pages/Header/Login/PrivateRoute/PrivateRoute';
+import PrivateRoute from './Pages/Header/Login/PrivateRoute/PrivateRoute';
 
 
 function App() {
@@ -52,9 +52,9 @@ function App() {
          <Route path='/signup'>
             <SignUp/>
          </Route>
-         <Route path='/shipping'>
+         <PrivateRoute path='/shipping'>
             <Shipping/>
-         </Route>
+         </PrivateRoute>
          <Route path='/about'>
             <About/>
          </Route>

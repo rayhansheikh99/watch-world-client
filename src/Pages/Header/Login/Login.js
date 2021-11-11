@@ -1,5 +1,5 @@
-// import { faGoogle } from '@fortawesome/free-brands-svg-icons';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGoogle } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import { Form, Button } from 'react-bootstrap';
 import { Link, useLocation } from 'react-router-dom';
@@ -13,6 +13,7 @@ const Login = () => {
   const history = useHistory();
   let location = useLocation();
   const redirect_uri = location.state?.from || '/home'
+
   const handleGoogleLogin = () => {
     loginWithGoogle()
     .then(result =>{

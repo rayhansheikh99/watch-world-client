@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import AllReview from '../AllReview/AllReview';
+import Brand from '../Brand/Brand';
 import Slider from '../Header/Slider/Slider';
 import Products from '../Products.js/Products';
 import './home.css';
@@ -19,7 +20,7 @@ const Home = () => {
         <div>
             <Slider/>
             <div className='mt-5 card-design1'>
-            <div><h2>Our Products</h2></div>
+            <div><h4>OUR PRODUCTS</h4></div>
             <div className="row row-cols-1 row-cols-md-3 g-4 pb-3 mt-3">
             
             {
@@ -28,6 +29,7 @@ const Home = () => {
         </div>
         </div>
             <AllReview/>
+            <Brand/>
         </div>
 
     

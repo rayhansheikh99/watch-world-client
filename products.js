@@ -35,5 +35,29 @@ const products = [
         image: 'https://k8q7r7a2.stackpathcdn.com/wp-content/uploads/2021/03/Louis-Erard-Excellence-Email-Grand-Feu-Small-Seconds-7.jpg',
         describe:'The Louis Erard, Sportive series features a stainless steel 44mm case, with a uni-directional rotating bezel, a blue dial and a scratch resistant sapphire crystal.'
     },
+    {
+        name:'Tag Heuer',
+        price:'BDT 110000',
+        image: 'https://r.lvmh-static.com/uploads/2014/10/coverdesktop-2800x1312.jpg',
+        describe:'The Tag Heuer Formula 1 Chronograph series watch features a stainless steel 43 mm case, with a fixed bezel a black cardon fiber and yellow dial and a scratch resistant sapphire crystal.'
+    },
+    {
+        name:'Ebel',
+        price:'BDT 120000',
+        image: 'https://en.worldtempus.com/media/cache/product/g/p/gphg2010_ebel_10_0630_hexagon_41mm_02_1_688x688.jpg',
+        describe:'The Ebel E Type series watch features a stainless steel 25 mm case, with a fixed bezel a white dial and a anti-reflective sapphire crystal.'
+    },
+    {
+        name:'Revue Thommen',
+        price:'BDT 180000',
+        image: 'https://i.pinimg.com/originals/6a/85/9f/6a859f97d1c2caae5efb330ec97be833.jpg',
+        describe:'The Revue Thommen, Air Speed XL series features a stainless steel 43.5mm case, with a uni-directional bezel, a black dial and a scratch resistant sapphire crystal.'
+    },
+    {
+        name:'Armand Nicolet',
+        price:'BDT 130000',
+        image: 'https://pbs.twimg.com/media/DVCGNCfW0AAMemf.jpg',
+        describe:'The Armand Nicolet MH2 series watch features a stainless steel 42 mm case, with a fixed bezel a blue dial and a scratch resistant sapphire crystal.'
+    },
 
 ]
