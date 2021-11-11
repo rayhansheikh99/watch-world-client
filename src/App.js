@@ -17,6 +17,7 @@ import AllProduct from './Pages/AllProduct/AllProduct';
 import Shipping from './Pages/Shipping/Shipping';
 import MyOrders from './Pages/MyOrders/MyOrders';
 import Review from './Pages/Review/Review';
+import Payment from './Pages/MyOrders/Payment/Payment';
 // import PrivateRoute from './Pages/Header/Login/PrivateRoute/PrivateRoute';
 
 
@@ -41,6 +42,9 @@ function App() {
          </Route>
          <Route path='/review'>
             <Review/>
+         </Route>
+         <Route path='/payment'>
+            <Payment/>
          </Route>
          <Route path='/login'>
             <Login/>

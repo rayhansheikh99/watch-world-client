@@ -16,7 +16,7 @@ const Footer = () => {
           <div className="row">
             <div className="col-md-5">
               <div className="left-container text-start">
-                <h1>Hajj Trip</h1>
+                <h1>Watch World</h1>
                 <div className="icons-container d-flex text-center ">
                   <div className="icon">
                   <a href="https://www.instagram.com/" target="_blank" rel='noreferrer'><FontAwesomeIcon icon={faInstagramSquare} /></a>
@@ -33,7 +33,7 @@ const Footer = () => {
                 </div>
 
                 <p className="mt-5">
-                  <small>Hajj Trip &copy; All rights reserved.</small>
+                  <small>Watch World &copy; All rights reserved.</small>
                 </p>
               </div>
             </div>
@@ -42,7 +42,7 @@ const Footer = () => {
                 <ul>
                   
                   <Nav.Link className="footer-menu" as={Link} to="/home#home">Home</Nav.Link>
-                  <Nav.Link className="footer-menu" as={Link} to="/orders">My Booking</Nav.Link>
+                  <Nav.Link className="footer-menu" as={Link} to="/products">Products</Nav.Link>
                   <Nav.Link className="footer-menu" as={Link} to="/about#about">About Us</Nav.Link>
                   <Nav.Link className="footer-menu" as={Link} to="/contact#contact">Contact Us</Nav.Link>
             

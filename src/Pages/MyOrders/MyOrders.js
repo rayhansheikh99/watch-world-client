@@ -44,7 +44,7 @@ const MyOrders = () => {
 
     return (
         <div className='page-size-bg'>
-        <div className='mb-5'><h2 className=''>My Booking List</h2></div>
+        <div className='mb-5'><h2 className=''>My Orders List</h2></div>
         <div className='d-flex mt-2 order-list'>
         
          <ul>
@@ -53,7 +53,7 @@ const MyOrders = () => {
                    
                         orders.map(order => <li
                             key={order._id}
-                            >Package Name: {order.packageName} E-mail: {order.email} Phone: {order.phone}
+                            >Product Name: {order.ProductName} E-mail: {order.email} Phone: {order.phone}
                             <span className='icon-delete'>
                             <FontAwesomeIcon onClick={()=>handleDeleteOrder(order._id)} className='ms-3 mt-1' icon={faTrash} />
                             </span>

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import AllReview from '../AllReview/AllReview';
 import Slider from '../Header/Slider/Slider';
 import Products from '../Products.js/Products';
 import './home.css';
@@ -26,7 +27,7 @@ const Home = () => {
             }
         </div>
         </div>
-    
+            <AllReview/>
         </div>
 
     

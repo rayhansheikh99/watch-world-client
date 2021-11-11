@@ -19,7 +19,7 @@ const Products = (props) => {
                         <ListGroupItem>{describe}</ListGroupItem>
                     </ListGroup>
                     <Card.Body>
-                  <Link to={`/Shipping`}><Button className='px-5 btn-design'>Buy Now</Button></Link>
+                  <Link to={'/Shipping'}><Button className='px-5 btn-design'>Buy Now</Button></Link>
                     
                     </Card.Body>
                 </Card>
