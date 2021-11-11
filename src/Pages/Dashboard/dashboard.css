@@ -1,0 +1,16 @@
+.dash-page{
+    margin-top: 77px;
+    height: 100vh;
+}
+.dash-menu{
+    text-decoration: none;
+    color: rgb(216, 214, 214);
+    font-weight: 700;
+    display: block;
+    line-height: 35px;
+}
+/* .sidebar{
+    background-color: rgba(110, 117, 89, 0.925);
+    padding: 25px;
+    height: 500px;
+} */

@@ -19,6 +19,7 @@ import MyOrders from './Pages/MyOrders/MyOrders';
 import Review from './Pages/Review/Review';
 import Payment from './Pages/MyOrders/Payment/Payment';
 import PrivateRoute from './Pages/Header/Login/PrivateRoute/PrivateRoute';
+import Dashboard from './Pages/Dashboard/Dashboard';
 
 
 function App() {
@@ -45,6 +46,9 @@ function App() {
          </Route>
          <Route path='/payment'>
             <Payment/>
+         </Route>
+         <Route path='/dashboard'>
+            <Dashboard/>
          </Route>
          <Route path='/login'>
             <Login/>
