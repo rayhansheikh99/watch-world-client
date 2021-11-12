@@ -43,6 +43,11 @@ const Sidebar = () => {
                 Manage Orders
               </CDBSidebarMenuItem>
             </NavLink>
+            <NavLink exact to="/manageproducts" activeClassName="activeClicked">
+              <CDBSidebarMenuItem icon="tasks">
+                Manage Products
+              </CDBSidebarMenuItem>
+            </NavLink>
  
             <NavLink
               onClick={logOut} as={Link} to="/login"

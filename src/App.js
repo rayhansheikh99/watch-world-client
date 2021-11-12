@@ -23,6 +23,7 @@ import Dashboard from './Pages/Dashboard/Dashboard';
 import AddProduct from './Pages/AddProduct/AddProduct';
 import MakeAdmin from './Pages/MakeAdmin/MakeAdmin';
 import ManageOrders from './Pages/ManageOrders/ManageOrders';
+import ManageProducts from './Pages/ManageProducts/ManageProducts';
 
 
 function App() {
@@ -61,6 +62,9 @@ function App() {
          </Route>
          <Route path='/manageorders'>
             <ManageOrders/>
+         </Route>
+         <Route path='/manageproducts'>
+            <ManageProducts/>
          </Route>
          <Route path='/login'>
             <Login/>
