@@ -7,7 +7,7 @@ import './menu.css'
 
 const Menu = () => {
   // nav menu section 
-  const {user, logOut} = useAuth();
+  const {user, admin, logOut} = useAuth();
     return (
         <div>
             <Navbar fixed="top" collapseOnSelect expand="lg" className='nav-color' variant="dark">
@@ -36,7 +36,7 @@ const Menu = () => {
       
     </Nav>
     <Nav>
-    {user?.email?<Nav.Link as={Link} to="/dashboard" className='menu-text'>Dashboard</Nav.Link>: ('')}
+    {admin && <Nav.Link as={Link} to="/dashboard" className='menu-text'>Dashboard</Nav.Link>}
       {user?.email?
        <Nav.Link onClick={logOut} as={Link} to="/login" className='me-5 menu-text'>Logout</Nav.Link>:
       <Nav.Link as={Link} to="/login" className='menu-text'>Login</Nav.Link>}

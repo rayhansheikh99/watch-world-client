@@ -14,6 +14,7 @@ const useFirebase = ()=>{
     const [user,setUser]=useState({});
     const [isLoading, setIsLoading] = useState(true);
     const [authError, setAuthError] = useState('');
+    const [admin, setAdmin] = useState(false);
 
 
     // google sign in 
@@ -112,6 +113,12 @@ const useFirebase = ()=>{
         return ()=> unsubscribed;
     },[])
 
+    useEffect(() => {
+        fetch(`http://localhost:5000/users/${user.email}`)
+            .then(res => res.json())
+            .then(data => setAdmin(data.admin))
+    }, [user.email])
+
     // log out 
 
     const logOut = () => {
@@ -144,7 +151,8 @@ const useFirebase = ()=>{
         handleNameChange,
         signInWithEmailAndPassword,
         saveUser,
-        signInWithGoogle
+        signInWithGoogle,
+        admin
 
 
         
