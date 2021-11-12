@@ -13,22 +13,32 @@ const useFirebase = ()=>{
     const [error, setError] = useState('')
     const [user,setUser]=useState({});
     const [isLoading, setIsLoading] = useState(true);
+    const [authError, setAuthError] = useState('');
 
 
     // google sign in 
     const provider = new GoogleAuthProvider()
     const auth = getAuth();
  
-    
-   
+    // const loginWithGoogle = () => {
+    //     setIsLoading(true);
+    //     // saveUser(user.email, user.displayName, 'PUT');
+    //    return signInWithPopup(auth, provider);
+     
+    // }
 
-    const loginWithGoogle = () => {
+    const signInWithGoogle = (location, history) => {
         setIsLoading(true);
-        saveUser(email, name, 'POST');
-       return signInWithPopup(auth, provider);
-              
-            
-
+        signInWithPopup(auth, provider)
+            .then((result) => {
+                const user = result.user;
+                saveUser(user.email, user.displayName, 'PUT');
+                setAuthError('');
+                const destination = location?.state?.from || '/';
+                history.replace(destination);
+            }).catch((error) => {
+                setAuthError(error.message);
+            }).finally(() => setIsLoading(false));
     }
 
     // email password sign in 
@@ -124,7 +134,6 @@ const useFirebase = ()=>{
 
     return{
         user,
-        loginWithGoogle,
         isLoading,
         logOut,
         handleEmailChange,
@@ -133,7 +142,9 @@ const useFirebase = ()=>{
         error,
         handleSignIn,
         handleNameChange,
-        signInWithEmailAndPassword
+        signInWithEmailAndPassword,
+        saveUser,
+        signInWithGoogle
 
 
         

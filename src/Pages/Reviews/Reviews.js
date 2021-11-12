@@ -1,5 +1,8 @@
 import React from 'react';
 import { Card, ListGroup, ListGroupItem } from 'react-bootstrap';
+import { RatingView} from 'react-simple-star-rating'
+
+
 
 const Reviews = (props) => {
     const {name, review, rating}=props.review
@@ -12,7 +15,7 @@ const Reviews = (props) => {
                     </Card.Body>
                     <Card.Body>
                         <p> {review}</p>
-                        <p>{rating}/5</p>
+                        <RatingView ratingValue={rating} /* RatingView Props */ />
                     </Card.Body>
                 </Card>
         </div>
