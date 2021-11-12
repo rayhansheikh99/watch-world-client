@@ -11,7 +11,7 @@ const Shipping = () => {
     const { user } = useAuth();
     const onSubmit = data => {
         console.log(data)
-        fetch('http://localhost:5000/orders', {
+        fetch('https://obscure-garden-07693.herokuapp.com/orders', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

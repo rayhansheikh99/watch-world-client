@@ -11,7 +11,7 @@ const ManageOrders = () => {
     const [orders, setOrders]=useState([])
     // data fetch 
     useEffect(()=>{
-        fetch('http://localhost:5000/allorder')
+        fetch('https://obscure-garden-07693.herokuapp.com/allorder')
         .then(res=>res.json())
         .then(data=> setOrders(data))
 
@@ -22,7 +22,7 @@ const ManageOrders = () => {
        const handleDeleteOrder = id =>{
         const proceed = window.confirm("Are you want to delete?")
         if(proceed){
-            const url = `http://localhost:5000/orders/${id}`
+            const url = `https://obscure-garden-07693.herokuapp.com/orders/${id}`
         fetch(url, {
             method:'DELETE'
         })

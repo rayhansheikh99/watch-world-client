@@ -18,7 +18,7 @@ const ManageProducts = () => {
     const handleDeleteProduct = id =>{
         const proceed = window.confirm("Are you want to delete?")
         if(proceed){
-            const url = `http://localhost:5000/products/${id}`
+            const url = `https://obscure-garden-07693.herokuapp.com/products/${id}`
         fetch(url, {
             method:'DELETE'
         })

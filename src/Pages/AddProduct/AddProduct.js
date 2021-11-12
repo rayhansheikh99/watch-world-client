@@ -9,7 +9,7 @@ const AddProduct = () => {
       //useform use here and POST Method Apply
       const { register, handleSubmit, reset } = useForm();
       const onSubmit = data => {
-          fetch('http://localhost:5000/products', {
+          fetch('https://obscure-garden-07693.herokuapp.com/products', {
               method: 'POST',
               headers: {
                   'content-type': 'application/json'
