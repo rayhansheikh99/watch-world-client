@@ -33,7 +33,7 @@ const Review = () => {
                     <Sidebar/>
                        
                     </Col>
-                    <Col className='mt-5' md={10} xs={10}>
+                    <Col className='mt-5 mx-auto' md={10} xs={10}>
                     <h4>Give Your Review</h4>
             <form className="booking-form product-form" onSubmit={handleSubmit(onSubmit)}>
         

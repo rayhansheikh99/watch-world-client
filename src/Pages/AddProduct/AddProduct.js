@@ -26,7 +26,7 @@ const AddProduct = () => {
       };
       return (
         
-          <div>
+          <div className='dash-page'>
                  <Row>
                     <Col className='sidebar' md={2} xs={2}>      
                     <Sidebar/>

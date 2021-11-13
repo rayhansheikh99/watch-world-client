@@ -36,14 +36,14 @@ const ManageProducts = () => {
         }
 
     return (
-        <div>
+        <div className='dash-page'>
               <Row>
                     <Col className='sidebar' md={2} xs={2}>      
                     <Sidebar/>
                        
                     </Col>
-                    <Col className='details product-details' md={10} xs={10}>
-                    <h4>Products Management</h4>
+                    <Col className='mt-5 mx-auto' md={10} xs={10}>
+                    <h4 className=''>Products Management</h4>
                     <div className='mt-5 card-design1'>
                     <div><h4>OUR PRODUCTS</h4></div>
                         <div className="row row-cols-1 row-cols-md-3 g-4 pb-3 mt-3">

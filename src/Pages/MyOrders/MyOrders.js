@@ -51,7 +51,7 @@ const MyOrders = () => {
         <Sidebar/>
            
         </Col>
-        <Col className='mt-5' md={10} xs={10}>
+        <Col className='mt-5 mx-auto' md={10} xs={10}>
         <div className='mb-5'><h2 className=''>My Orders List</h2></div>
         <div className='d-flex mt-2 order-list'>
         

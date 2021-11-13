@@ -12,7 +12,7 @@ const Dashboard = () => {
                     <Sidebar/>
                        
                     </Col>
-                    <Col className='mt-5' md={10} xs={10}>
+                    <Col className='mt-5 mx-auto' md={10} xs={10}>
                     <h3>Welcome to Admin Dashboard</h3>
                     </Col> 
                 </Row>

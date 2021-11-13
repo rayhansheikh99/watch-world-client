@@ -15,7 +15,7 @@ const Payment = () => {
                     <Sidebar/>
                        
                     </Col>
-                    <Col className='mt-5' md={10} xs={10}>
+                    <Col className='mt-5 mx-auto' md={10} xs={10}>
                     <img className='payment-img mt-5' src={pay} alt=''></img>
                     </Col> 
                 </Row>

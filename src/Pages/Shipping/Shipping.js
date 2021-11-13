@@ -53,7 +53,7 @@ const Shipping = () => {
                 <input defaultValue={user.displayName} {...register("name",{ required: true })} />
                 <input defaultValue={user.email} {...register("email", { required: true })} />
                 {errors.email && <span className="error">This field is required</span>}
-                <input defaultValue={productDetails.name} {...register("ProductName",{ required: true })} />
+                <input defaultValue={productDetails?.name} {...register("ProductName",{ required: true })} />
                 <input placeholder="Address" defaultValue="" {...register("address",{ required: true })} />
                 <input placeholder="Phone Number" defaultValue="" {...register("phone",{ required: true })} />
                 <Button type="submit" className='btn-book d-block'>Confirm Order</Button>

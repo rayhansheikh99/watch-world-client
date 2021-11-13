@@ -40,14 +40,14 @@ const ManageOrders = () => {
 
 
     return (
-        <div >
+        <div className='dash-page'>
              <Row>
                     <Col className='sidebar' md={2} xs={2}>      
                     <Sidebar/>
                        
                     </Col>
-                    <Col className='details product-details'  md={10} xs={10}>
-                    <div className='mb-5'><h2 className=''>Manage All Order</h2></div>
+                    <Col className='mx-auto mt-5'  md={10} xs={10}>
+                    <div className=' mb-5'><h2 className=''>Manage All Order</h2></div>
             <div className='d-flex mt-2 order-list-all'>
             
              <ul>
