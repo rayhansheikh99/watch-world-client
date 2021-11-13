@@ -1,11 +1,11 @@
 import React from 'react';
-// import './error.css'
-import error from '../../../images/coming-soon.jpg'
+import './payment.css'
+import pay from '../../../images/coming-soon.jpg'
 const Payment = () => {
     return (
-        // error message show 
+        // payment message show 
         <div className='error-container'>
-            <img src={error} alt=''></img>
+            <img className='payment-img' src={pay} alt=''></img>
         </div>
     );
 };
