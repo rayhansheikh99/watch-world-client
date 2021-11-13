@@ -36,11 +36,11 @@ const MakeAdmin = () => {
     return (
         <div>
              <Row>
-                    <Col className='sidebar' sm={2}>      
+                    <Col className='sidebar' md={2} xs={2}>      
                     <Sidebar/>
                        
                     </Col>
-                    <Col className='details package-details' sm={10}>
+                    <Col className='details product-details' md={10} xs={10}>
                     <h4>Make an Admin</h4>
                     <Form  onSubmit={handleAdminSubmit}>
                     <Form.Control onBlur={handleOnBlur} className='w-50 mx-auto mb-2 mt-2' type="email" placeholder="Enter email" />

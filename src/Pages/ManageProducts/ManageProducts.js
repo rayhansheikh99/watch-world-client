@@ -38,11 +38,11 @@ const ManageProducts = () => {
     return (
         <div>
               <Row>
-                    <Col className='sidebar' sm={2}>      
+                    <Col className='sidebar' md={2} xs={2}>      
                     <Sidebar/>
                        
                     </Col>
-                    <Col className='details package-details' sm={10}>
+                    <Col className='details product-details' md={10} xs={10}>
                     <h4>Products Management</h4>
                     <div className='mt-5 card-design1'>
                     <div><h4>OUR PRODUCTS</h4></div>

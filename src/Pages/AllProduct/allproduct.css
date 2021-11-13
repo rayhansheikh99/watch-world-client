@@ -1,9 +1,9 @@
 
-.package-page{
+.product-page{
     margin-top: 10%;
 }
 @media only screen and (max-width: 640px){
-    .package-page{
+    .product-page{
         margin-top: 80px;
     }
 }

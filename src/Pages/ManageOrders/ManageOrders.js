@@ -42,11 +42,11 @@ const ManageOrders = () => {
     return (
         <div >
              <Row>
-                    <Col className='sidebar' sm={2}>      
+                    <Col className='sidebar' md={2} xs={2}>      
                     <Sidebar/>
                        
                     </Col>
-                    <Col className='details package-details'  sm={10}>
+                    <Col className='details product-details'  md={10} xs={10}>
                     <div className='mb-5'><h2 className=''>Manage All Order</h2></div>
             <div className='d-flex mt-2 order-list-all'>
             

@@ -1,5 +1,6 @@
 import React from 'react';
 import {Container, Row, Col, Nav} from "react-bootstrap";
+import AllProduct from '../AllProduct/AllProduct';
 import './dashboard.css'
 import Sidebar from './Sidebar/Sidebar';
 const Dashboard = () => {
@@ -7,12 +8,12 @@ const Dashboard = () => {
         <div className='dash-page'>
         
                 <Row>
-                    <Col className='sidebar' sm={2}>      
+                    <Col className='sidebar' md={2} xs={2}>      
                     <Sidebar/>
                        
                     </Col>
-                    <Col  sm={10}>
-                        <p>Admin Dashboard</p>
+                    <Col className='mt-5' md={10} xs={10}>
+                    <h3>Welcome to Admin Dashboard</h3>
                     </Col> 
                 </Row>
 

@@ -13,7 +13,7 @@ const AllProduct = () => {
     },[])
 
     return (
-        <div className='package-page'>
+        <div className='product-page'>
            <div className='mt-5 card-design1'>
             <div><h4>OUR PRODUCTS</h4></div>
             <div className="row row-cols-1 row-cols-md-3 g-4 pb-3 mt-3">

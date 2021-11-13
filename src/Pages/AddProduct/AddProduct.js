@@ -28,13 +28,13 @@ const AddProduct = () => {
         
           <div>
                  <Row>
-                    <Col className='sidebar' sm={2}>      
+                    <Col className='sidebar' md={2} xs={2}>      
                     <Sidebar/>
                        
                     </Col>
-                    <Col className='details package-details' sm={10}>
+                    <Col className='details product-details' md={10} xs={10}>
                     <h4>Add Product From Here</h4>
-              <form className="booking-form package-form" onSubmit={handleSubmit(onSubmit)}>
+              <form className="booking-form product-form" onSubmit={handleSubmit(onSubmit)}>
           
                   <input  placeholder="Product Name" defaultValue="" {...register("name",{ required: true })} />
                   <input  placeholder="Price" defaultValue="" {...register("price", { required: true })} />

@@ -26,9 +26,9 @@ const Review = () => {
             })
     };
     return (
-        <div className='details review-page package-details'>
+        <div className='details review-page product-details'>
             <h4>Give Your Review</h4>
-            <form className="booking-form package-form" onSubmit={handleSubmit(onSubmit)}>
+            <form className="booking-form product-form" onSubmit={handleSubmit(onSubmit)}>
         
                 <input defaultValue={user.displayName} {...register("name",{ required: true })} />
                 <input placeholder="Give Rating(0-5)" defaultValue="" {...register("rating", { required: true })} />

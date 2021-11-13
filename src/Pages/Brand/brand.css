@@ -2,11 +2,11 @@
     position: absolute;
     top: 170px;
     left: 110px;
-    background-color: rgb(255, 255, 255);
-    color: black;
-    border: none;
+    background-color: rgb(255, 255, 255) !important;
+    color: black !important;
+    border: none !important;
 }
 .btn-brand:hover{
-    background-color: black;
-    color: white;
+    background-color: black !important;
+    color: white !important;
 }
