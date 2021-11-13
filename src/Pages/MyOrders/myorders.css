@@ -1,21 +1,21 @@
 .order-list{
     background-color: rgb(219, 241, 189);
     padding: 5px;
-    width: 100%;
+    width: 80%;
     justify-content: center;
     border-radius: 15px;
+    margin: auto;
     
 }
 .order-list p{
     margin-left: 10px;
 }
 .page-size-bg{
-    margin-top: 100px;
+    margin-top: 77px;
     /* margin-bottom: 700px; */
     height: 100vh;
     text-align: center;
-    margin-right: 150px;
-    margin-left: 150px;
+
 
 }
 .icon-delete{

@@ -22,7 +22,7 @@ const Products = (props) => {
                     </ListGroup>
                     <Card.Body>
                     
-                  <Link to={'/Shipping'}><Button className='px-5 btn-design'><FontAwesomeIcon className='me-2' icon={faCartPlus} />Buy Now</Button></Link>
+                  <Link to={`/Shipping/${_id}`}><Button className='px-5 btn-design'><FontAwesomeIcon className='me-2' icon={faCartPlus} />Buy Now</Button></Link>
                     
                     </Card.Body>
                 </Card>

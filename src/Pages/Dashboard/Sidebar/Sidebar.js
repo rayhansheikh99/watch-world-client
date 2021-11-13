@@ -11,7 +11,7 @@ import { Link, NavLink } from 'react-router-dom';
 import useAuth from '../../../Hooks/useAuth';
  
 const Sidebar = () => {
-    const {user, logOut} = useAuth();
+    const {admin, user, logOut} = useAuth();
   return (
     <div
       style={{ display: 'flex', height: '100vh', overflow: 'scroll initial' }}
@@ -28,27 +28,41 @@ const Sidebar = () => {
         </CDBSidebarHeader>
  
         <CDBSidebarContent className="sidebar-content">
-          <CDBSidebarMenu>
+        
             <NavLink exact to="/dashboard" activeClassName="activeClicked">
               <CDBSidebarMenuItem icon="columns">Dashboard</CDBSidebarMenuItem>
             </NavLink>
-            <NavLink exact to="/addproduct" activeClassName="activeClicked">
+            {admin &&<NavLink exact to="/addproduct" activeClassName="activeClicked">
               <CDBSidebarMenuItem icon="plus-circle">Add Product</CDBSidebarMenuItem>
-            </NavLink>
-            <NavLink exact to="/makeadmin" activeClassName="activeClicked">
+            </NavLink>}
+            {admin &&<NavLink exact to="/makeadmin" activeClassName="activeClicked">
               <CDBSidebarMenuItem icon="user">Make Admin</CDBSidebarMenuItem>
-            </NavLink>
-            <NavLink exact to="/manageorders" activeClassName="activeClicked">
+            </NavLink>}
+            {admin &&<NavLink exact to="/manageorders" activeClassName="activeClicked">
               <CDBSidebarMenuItem icon="tasks">
                 Manage Orders
               </CDBSidebarMenuItem>
-            </NavLink>
-            <NavLink exact to="/manageproducts" activeClassName="activeClicked">
+            </NavLink>}
+            {admin &&<NavLink exact to="/manageproducts" activeClassName="activeClicked">
               <CDBSidebarMenuItem icon="tasks">
                 Manage Products
               </CDBSidebarMenuItem>
-            </NavLink>
- 
+            </NavLink>}
+            {user?.email &&<NavLink exact to="/myorders" activeClassName="activeClicked">
+              <CDBSidebarMenuItem icon="tasks">
+              My Orders
+              </CDBSidebarMenuItem>
+            </NavLink>}
+            {user?.email &&<NavLink exact to="/review" activeClassName="activeClicked">
+              <CDBSidebarMenuItem icon="asterisk">
+              Review
+              </CDBSidebarMenuItem>
+            </NavLink>}
+            {user?.email &&<NavLink exact to="/payment" activeClassName="activeClicked">
+              <CDBSidebarMenuItem icon="money-check-alt">
+              Payment
+              </CDBSidebarMenuItem>
+            </NavLink>}
             <NavLink
               onClick={logOut} as={Link} to="/login"
             >
@@ -56,7 +70,7 @@ const Sidebar = () => {
                 Log Out
               </CDBSidebarMenuItem>
             </NavLink>
-          </CDBSidebarMenu>
+          
         </CDBSidebarContent>
  
         <CDBSidebarFooter style={{ textAlign: 'center' }}>

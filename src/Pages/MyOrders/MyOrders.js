@@ -1,7 +1,9 @@
 import { faTrash } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useEffect, useState } from 'react';
+import { Button, Col, Row } from 'react-bootstrap';
 import useAuth from '../../Hooks/useAuth';
+import Sidebar from '../Dashboard/Sidebar/Sidebar';
 import './myorders.css'
 
 const MyOrders = () => {
@@ -44,6 +46,12 @@ const MyOrders = () => {
 
     return (
         <div className='page-size-bg'>
+        <Row>
+        <Col className='sidebar' md={2} xs={2}>      
+        <Sidebar/>
+           
+        </Col>
+        <Col className='mt-5' md={10} xs={10}>
         <div className='mb-5'><h2 className=''>My Orders List</h2></div>
         <div className='d-flex mt-2 order-list'>
         
@@ -51,12 +59,13 @@ const MyOrders = () => {
             
                 {
                    
-                        orders.map(order => <li
+                        orders.map(order => <li className='mb-3'
                             key={order._id}
-                            >Product Name: {order.ProductName} E-mail: {order.email} Phone: {order.phone}
+                            >Product Name: {order.ProductName} E-mail: {order.email} Phone: {order.phone} 
                             <span className='icon-delete'>
                             <FontAwesomeIcon onClick={()=>handleDeleteOrder(order._id)} className='ms-3 mt-1' icon={faTrash} />
                             </span>
+                            <Button className='ms-2 py-0 px-2'>{order.status}</Button>
                         </li>)
                         
                 }
@@ -65,7 +74,11 @@ const MyOrders = () => {
                
         </ul>
     </div>
+        </Col> 
+    </Row>
     </div>
+
+        
     );
 };
 

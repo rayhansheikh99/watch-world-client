@@ -72,7 +72,7 @@ function App() {
          <Route path='/signup'>
             <SignUp/>
          </Route>
-         <PrivateRoute path='/shipping'>
+         <PrivateRoute path='/shipping/:Id'>
             <Shipping/>
          </PrivateRoute>
          <Route path='/about'>
