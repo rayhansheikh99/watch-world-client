@@ -32,7 +32,7 @@ const AddProduct = () => {
                     <Sidebar/>
                        
                     </Col>
-                    <Col className='details product-details' md={10} xs={10}>
+                    <Col className='mx-auto' md={10} xs={10}>
                     <h4>Add Product From Here</h4>
               <form className="booking-form product-form" onSubmit={handleSubmit(onSubmit)}>
           
