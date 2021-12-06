@@ -51,7 +51,7 @@ const ManageProducts = () => {
                         
                         {
                         products.map(product=>
-                        <div> 
+                        <div key={product._id}> 
                        
                        <Card className="card h-100 card-design">
                             <Card.Img className="img-service d-block" variant="top" src={product.image} />
@@ -65,7 +65,7 @@ const ManageProducts = () => {
                             <Card.Body>
                             
                             <span className='icon-delete'>
-                            <Button className='px-5 btn-design'><FontAwesomeIcon  onClick={()=>handleDeleteProduct(product._id)} className='ms-3 mt-1 me-2' icon={faTrash} />Delete</Button>
+                            <Button className='px-5 btn-design' onClick={()=>handleDeleteProduct(product._id)}><FontAwesomeIcon onClick={()=>handleDeleteProduct(product._id)} className='ms-3 mt-1 me-2' icon={faTrash}/>Delete</Button>
                             </span>
                             
                             </Card.Body>
